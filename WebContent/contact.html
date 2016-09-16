@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <img src="./img/default-merchant-logo.png" alt="logo">
+                </td>
+                <td>
+                    <h1>Insert Company Name</h1>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <!-- Navigation linkes -->
+                <td><a href="./index.html">Home</a></td>
+                <td><a href="./blog/index.html">Blog</a></td>
+                <td><a href="./about.html">About</a></td>
+                <td><a href="./contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+        <br />
+        <h1>Email Contact Form</h1>
+        <form method="post" action="./php/echo.php">
+            <h3>Please enter your contact information:</h3>
+            First name:<br/>
+            <input type="text" name="firstname"><br/>
+            Last name:<br/>
+            <input type="text" name="lastname"><br/> 
+            E-Mail:<br/> 
+            <input type="text" name="email"><br/>
+            Country:<br/>
+            <select name="country">
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="CA">Canada</option>
+                <option value="OT">Other</option>
+            </select>
+            <hr/>
+            What is your gender?<br/> 
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+            <hr/>
+            Comments:<br/>
+            <textarea name="message" rows="10" cols="30">Enter a Comment here.</textarea> 
+            <hr/> 
+            <table>
+                <tr>
+                    <td><input name="Submit" value="Submit" type="submit" /></td>
+                    <td> <input type="reset" value="Clear Form"></td> 
+                </tr>
+            </table>
+        </form>
+    </body>
+    <footer>
+        <table>
+            <tr>
+                  <!-- Navigation linkes -->
+                  <td><a href="./index.html">Home</a></td>
+                  <td><a href="./blog/index.html">Blog</a></td>
+                  <td><a href="./about.html">About</a></td>
+                  <td><a href="./contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+        &copy; 2016 Insert Company Name
+    </footer>
+</html>
